@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+}
+header a:hover{
+    background-color: red;
+}
+nav{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(166, 163, 163);
+}
+.section1{
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.para1{
+    padding-top: 20px;
+    text-align: center;
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+button{
+    background-color: rgb(166, 163, 163);;
+    border: 2px solid black;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+#about{
+    height: 50vh;
+    margin-bottom: 25px;
+}
+.section2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    margin-top: 20px;
+    height: 25vh;
+    width: 10vw;
+}
+.para2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#skills{
+    height: 30vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+#skills h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.skill span{
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+.progress-bar{
+    background-color: #ddd;
+    border-radius: 25px;
+    height: 20px;
+    width: 70%;
+    margin: 10px auto;
+    position: relative;
+}
+.progress{
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#projects{
+   margin-top: 30px;
+    height: 30vh;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.para3{
+    margin-top: 20px;
+    text-align: center;
+}
+#contacts{
+    height: 15vh;
+  
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    margin-bottom: 120px;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.footer-content p{
+    margin: 0;
+    font-size: 14px;
+}
+.social-links{
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+}
+li{
+    display: inline-block;
+}
+.social-links a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Media Queries */
+
+/* For Tablets (screens less than 1024px) */
+@media screen and (max-width: 1024px) {
+    nav {
+        height: 40vh;
+    }
+
+    .section1 {
+        font-size: 1.8rem;
+        padding-top: 40px;
+    }
+
+    .para1 {
+        padding-top: 15px;
+        font-size: 1rem;
+    }
+
+    img {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    #about {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .para2 {
+        font-size: 1rem;
+        margin: 10px 20px;
+    }
+}
+
+/* For Mobile Devices (screens less than 600px) */
+@media screen and (max-width: 600px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    li a {
+        margin: 10px 0;
+        font-size: 0.9rem;
+    }
+
+    nav {
+        height: 30vh;
+    }
+
+    .section1 {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+
+    .para1 {
+        padding-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    img {
+        width: 30vw;
+        height: 15vh;
+    }
+
+    #skills {
+        padding: 10px;
+        height: auto;
+    }
+
+    .progress-bar {
+        width: 90%;
+    }
+
+    #projects {
+        height: auto;
+        padding: 10px;
+    }
+
+    .para3 {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #contacts {
+        height: auto;
+        padding: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    input, textarea {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
